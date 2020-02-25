@@ -1,9 +1,13 @@
 package br.com.alura.microservico.loja.dto;
 
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 public class InfoFornecedorDto {
 
-    public String endereco;
+    private String nome;
+
+    private String estado;
+
+    private String endereco;
 }
