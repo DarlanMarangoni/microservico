@@ -2,10 +2,9 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: C:/microservice-repo
+        git:
+          uri: https://github.com/DarlanMarangoni/microservice-repo
+          search-paths: fornecedor
