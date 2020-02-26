@@ -3,17 +3,6 @@ server:
 spring:
   application:
     name: 'fornecedor'
-  datasource:
-    password: root
-    url: jdbc:mysql://localhost:3306/fornecedor
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
-    show-sql: true
 
 eureka:
   client:
