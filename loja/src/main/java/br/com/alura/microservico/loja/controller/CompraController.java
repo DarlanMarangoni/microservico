@@ -2,6 +2,7 @@ package br.com.alura.microservico.loja.controller;
 
 import br.com.alura.microservico.loja.controller.dto.CompraDto;
 import br.com.alura.microservico.loja.dto.InfoFornecedorDto;
+import br.com.alura.microservico.loja.model.Compra;
 import br.com.alura.microservico.loja.service.CompraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,7 @@ public class CompraController {
     private CompraService compraService;
 
     @PostMapping
-    public ResponseEntity<InfoFornecedorDto> realizaCompra(@RequestBody CompraDto compraDto){
-        return compraService.realizaCompra(compraDto);
+    public ResponseEntity<Compra> realizaCompra(@RequestBody CompraDto compraDto){
+        return ResponseEntity.ok().body(compraService.realizaCompra(compraDto));
     }
 }

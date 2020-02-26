@@ -1,4 +1,4 @@
-package br.com.alura.microservico.fornecedor.sto;
+package br.com.alura.microservico.fornecedor.dto;
 
 import lombok.Builder;
 import lombok.Getter;

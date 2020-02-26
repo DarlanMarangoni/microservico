@@ -1,11 +1,14 @@
 package br.com.alura.microservico.loja.controller.dto;
 
+import lombok.Data;
 import lombok.Getter;
+import lombok.ToString;
 
-@Getter
+@Data
+@ToString
 public class EnderecoDto {
 
-    public String rua;
-    public String numero;
-    public String estado;
+    private String rua;
+    private String numero;
+    private String estado;
 }
